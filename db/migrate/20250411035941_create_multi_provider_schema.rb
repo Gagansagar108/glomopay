@@ -9,8 +9,6 @@ class CreateMultiProviderSchema < ActiveRecord::Migration[8.0]
       t.timestamps
     end
 
-    add
-
     create_table :notifications do |t|
       t.references :user
       t.string :message 
